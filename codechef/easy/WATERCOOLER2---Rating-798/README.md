@@ -51,17 +51,18 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T12:45:55.255Z  
+**Submitted:** 2026-09-18T12:48:30.109Z  
 
 ```py
 # cook your dish here
 T=int(input())
 for i in range(T):
     X,Y=map(int,input().split())
+    x=int(X)
     month=0
     while X<Y:
         month+=1
-        X+=X
+        X+=x
     print(month)
 
 ```
