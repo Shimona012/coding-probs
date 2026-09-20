@@ -3,7 +3,7 @@ T=int(input())
 for i in range(T):
     N=int(input())
     p1,p2=0,0
-    for i in range(N):
+    for k in range(N):
         n1,n2=[sum(map(int,x))for x in input().split()]
         if n1==n2:
             p1+=1
