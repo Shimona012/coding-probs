@@ -1,4 +1,4 @@
-# Python If-Else
+# Arithmetic Operators
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -46,31 +46,13 @@ Print the three lines as explained above.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T01:54:01.132Z  
+**Submitted:** 2026-09-23T01:55:02.269Z  
 
 ```py
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-
-
 if __name__ == '__main__':
-    n = int(input().strip())
-    if n%2==0:
-        if n>1:
-            if n<6:
-                print("Not Weird")
-            elif n<21:
-                print("Weird")
-            else:
-                print("Not Weird")
-    else:
-        print("Weird")
+    a = int(input())
+    b = int(input())
+    print(a+b,a-b,a*b,sep='\n')
 
 ```
 
