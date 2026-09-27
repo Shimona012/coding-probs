@@ -1,2 +1,3 @@
 # cook your dish here
-print("I", "love", "CodeChef",sep="\n")
+for i in range(1,6):
+    print(f"{i} - {i**2}")
