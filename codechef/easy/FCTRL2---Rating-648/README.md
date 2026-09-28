@@ -42,16 +42,20 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T12:22:03.407Z  
+**Submitted:** 2026-09-28T17:56:56.969Z  
 
 ```py
 # cook your dish here
-import math
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
 t=int(input())
 for i in range(t):
     n=int(input())
-    print(math.factorial(n))
-
+    print(factorial(n))
+    
 ```
 
 ---
