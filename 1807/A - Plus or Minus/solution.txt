@@ -1,0 +1,8 @@
+t=int(input())
+for i in range(t):
+    a,b,c=map(int,input().split())
+    if a>=1 and b<=9 and (c in range(-8,19)):
+        if a+b==c:
+            print("+")
+        else:
+            print("-")
