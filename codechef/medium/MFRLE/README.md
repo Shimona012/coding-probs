@@ -67,17 +67,19 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T12:14:03.555Z  
+**Submitted:** 2026-10-07T12:08:49.746Z  
 
 ```py
 # cook your dish here
 S=input().lower()
+only_chars=str()
 freq=dict()
 for i in S:
-    if i.isalpha():
-        freq[i]=freq.get(i,0)+1
-m=max(freq.values())
-print(sorted([i for i in freq if freq[i]==m])[0])
+    if i.isalpha()==True:
+        only_chars+=i
+for j in only_chars:
+    freq.setdefault(j,only_chars.count(j))
+print(max(freq.keys(),key=freq.get))
 ```
 
 ---
