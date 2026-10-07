@@ -67,7 +67,7 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T12:10:32.834Z  
+**Submitted:** 2026-10-07T12:14:03.555Z  
 
 ```py
 # cook your dish here
@@ -76,7 +76,8 @@ freq=dict()
 for i in S:
     if i.isalpha():
         freq[i]=freq.get(i,0)+1
-print(max(freq.keys(),key=freq.get))
+m=max(freq.values())
+print(sorted([i for i in freq if freq[i]==m])[0])
 ```
 
 ---
