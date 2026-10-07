@@ -66,7 +66,7 @@ Therefore, the answer is `NO`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T12:15:56.495Z  
+**Submitted:** 2026-10-07T12:16:34.346Z  
 
 ```py
 # cook your dish here
@@ -74,6 +74,8 @@ S=input()
 T=input()
 if T in S:
     print("YES")
+else:
+    print("NO")
 
 ```
 
