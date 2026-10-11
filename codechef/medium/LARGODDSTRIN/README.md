@@ -87,20 +87,15 @@ The last digit is '1', which is odd, so the entire number is the largest odd sub
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-11T16:59:51.944Z  
+**Submitted:** 2026-10-11T17:04:49.957Z  
 
 ```py
 def findLargestOddSubstring(num):
-    num+='0'
     count=''
     max_count=''
-    for i in num:
-        count+=i
-        if int(count)%2==0:
-            if len(count)>=len(max_count):
-                max_count=count
-                count=''
-
+    for i in range(len(num)):
+        if int(num[i])%2!=0:
+            max_count=num[:i+1]
     if max_count=='':
         return -1
     else:
