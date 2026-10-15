@@ -84,7 +84,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T18:14:57.728Z  
+**Submitted:** 2026-10-15T18:15:20.815Z  
 
 ```py
 N1,N2,N3=map(int,input().split())
