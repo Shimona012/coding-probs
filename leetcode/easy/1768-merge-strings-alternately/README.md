@@ -56,9 +56,9 @@ merged: a p b q c   d
 ## Solution
 
 **Language:** Python  
-**Runtime:** 17 ms (beats 47.48%)  
+**Runtime:** 14 ms (beats 73.33%)  
 **Memory:** 12.3 MB (beats 57.26%)  
-**Submitted:** 2026-10-17T08:48:29.341Z  
+**Submitted:** 2026-10-17T08:50:38.089Z  
 
 ```py
 class Solution(object):
@@ -68,15 +68,10 @@ class Solution(object):
         :type word2: str
         :rtype: str
         """
-        n1,n2=len(word1),len(word2)
-        n=min(n1,n2)
-        word=list()
-        for i in range(n):
-            word.append(word1[i])
-            word.append(word2[i])
-        word.append(word1[n:])
-        word.append(word2[n:])
-        word="".join(word)
+        word=''
+        for i in range(min(len(word1),len(word2))):
+            word+=word1[i]+word2[i]
+        word+=word1[i+1:]+word2[i+1:]
         return word
 
         
