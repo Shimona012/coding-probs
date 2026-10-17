@@ -44,17 +44,14 @@ Explanation: It is the substring "abc" four times or the substring "abcabc" twic
 ## Solution
 
 **Language:** Python  
-**Runtime:** 2 ms (beats 69.63%)  
-**Memory:** 12.3 MB (beats 97.30%)  
-**Submitted:** 2026-10-17T09:20:22.097Z  
+**Runtime:** 1 ms (beats 73.50%)  
+**Memory:** 12.1 MB (beats 100.00%)  
+**Submitted:** 2026-10-17T09:21:04.378Z  
 
 ```py
 class Solution(object):
     def repeatedSubstringPattern(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+        #:type s: str:rtype: bool
         return s in (s + s)[1:-1]
 ```
 
