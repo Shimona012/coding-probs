@@ -1,5 +1,4 @@
-class Solution(object):
-    def average(self, salary):
-        """:type salary: List[int]:rtype: float"""
+class Solution:
+    def average(self, salary: list[int]) -> float:
         salary.sort()
-        return float(sum(salary[1:-1]) / (len(salary) - 2))
+        return (sum(salary[1:-1]) )/ (len(salary) - 2)
