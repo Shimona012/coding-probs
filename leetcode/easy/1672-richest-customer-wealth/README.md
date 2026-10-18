@@ -54,17 +54,14 @@ Output: 17
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 12.3 MB (beats 91.03%)  
-**Submitted:** 2026-10-18T15:39:29.508Z  
+**Runtime:** 0 ms  
+**Memory:** 12.2 MB  
+**Submitted:** 2026-10-18T15:39:51.560Z  
 
 ```py
 class Solution(object):
     def maximumWealth(self, accounts):
-        """
-        :type accounts: List[List[int]]
-        :rtype: int
-        """
+        """:type accounts: List[List[int]]:rtype: int"""
         return max(map(sum, accounts))
 ```
 
