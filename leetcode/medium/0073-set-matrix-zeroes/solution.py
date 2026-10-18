@@ -4,14 +4,14 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-        row=list()
-        col=list()
+        row=set()
+        col=set()
         for i in range(len(matrix)):
             if 0 in matrix[i]:
-                row.append(i)
+                row.add(i)
                 for j in range(len(matrix[i])):
                     if matrix[i][j] == 0:
-                        col.append(j)
+                        col.add(j)
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
                 if i in row or j in col:
