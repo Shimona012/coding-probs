@@ -46,9 +46,9 @@ Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 73 ms (beats 14.20%)  
-**Memory:** 13.4 MB (beats 96.78%)  
-**Submitted:** 2026-10-18T16:15:35.952Z  
+**Runtime:** 9 ms (beats 72.29%)  
+**Memory:** 13.7 MB (beats 52.73%)  
+**Submitted:** 2026-10-18T16:16:22.569Z  
 
 ```py
 class Solution(object):
@@ -57,14 +57,14 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-        row=list()
-        col=list()
+        row=set()
+        col=set()
         for i in range(len(matrix)):
             if 0 in matrix[i]:
-                row.append(i)
+                row.add(i)
                 for j in range(len(matrix[i])):
                     if matrix[i][j] == 0:
-                        col.append(j)
+                        col.add(j)
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
                 if i in row or j in col:
