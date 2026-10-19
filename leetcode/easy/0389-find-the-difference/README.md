@@ -40,18 +40,13 @@ Output: "y"
 ## Solution
 
 **Language:** Python  
-**Runtime:** 6 ms (beats 26.27%)  
-**Memory:** 12.2 MB (beats 94.46%)  
-**Submitted:** 2026-10-17T08:57:03.281Z  
+**Runtime:** 0 ms  
+**Memory:** 19 MB  
+**Submitted:** 2026-10-19T07:52:32.376Z  
 
 ```py
-class Solution(object):
-    def findTheDifference(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: str
-        """
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
         s="".join(sorted(s))
         t="".join(sorted(t))
         for i in range(len(s)):
@@ -59,7 +54,6 @@ class Solution(object):
                 return t[i]
         else:
             return t[-1]
-        
 ```
 
 ---
