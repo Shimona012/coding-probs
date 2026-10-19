@@ -46,9 +46,9 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-10-19T07:46:36.334Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 19.5 MB (beats 55.26%)  
+**Submitted:** 2026-10-19T07:46:41.006Z  
 
 ```py
 class Solution:
