@@ -56,25 +56,18 @@ merged: a p b q c   d
 ## Solution
 
 **Language:** Python  
-**Runtime:** 14 ms (beats 73.33%)  
-**Memory:** 12.3 MB (beats 57.26%)  
-**Submitted:** 2026-10-17T08:50:38.089Z  
+**Runtime:** 50 ms (beats 22.89%)  
+**Memory:** 19.2 MB (beats 87.32%)  
+**Submitted:** 2026-10-19T07:51:51.407Z  
 
 ```py
-class Solution(object):
-    def mergeAlternately(self, word1, word2):
-        """
-        :type word1: str
-        :type word2: str
-        :rtype: str
-        """
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
         word=''
         for i in range(min(len(word1),len(word2))):
             word+=word1[i]+word2[i]
         word+=word1[i+1:]+word2[i+1:]
         return word
-
-        
 ```
 
 ---
