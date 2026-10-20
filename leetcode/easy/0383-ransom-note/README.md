@@ -44,9 +44,9 @@ Output: true
 ## Solution
 
 **Language:** Python  
-**Runtime:** 22 ms (beats 55.40%)  
-**Memory:** 19.5 MB (beats 71.34%)  
-**Submitted:** 2026-10-20T14:20:41.848Z  
+**Runtime:** 27 ms (beats 31.89%)  
+**Memory:** 19.4 MB (beats 92.30%)  
+**Submitted:** 2026-10-20T14:27:46.317Z  
 
 ```py
 class Solution:
@@ -61,6 +61,7 @@ class Solution:
                 return False
             d[i]-=1
         return True
+        n
 
             
 ```
