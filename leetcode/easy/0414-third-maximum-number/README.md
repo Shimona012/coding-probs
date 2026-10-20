@@ -60,9 +60,9 @@ The third distinct maximum is 1.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 2 ms (beats 34.79%)  
-**Memory:** 20.6 MB (beats 8.82%)  
-**Submitted:** 2026-10-20T12:44:29.816Z  
+**Runtime:** 1 ms (beats 43.43%)  
+**Memory:** 20.5 MB (beats 22.70%)  
+**Submitted:** 2026-10-20T12:44:43.193Z  
 
 ```py
 class Solution:
@@ -71,7 +71,8 @@ class Solution:
         nums.sort(reverse=True)
         if len(nums)>=3:
             return nums[2]
-        return nums[0]
+        else:
+            return nums[0]
 ```
 
 ---
