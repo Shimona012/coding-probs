@@ -1,0 +1,70 @@
+# Power of Three
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+Given an integer `n`, return  *`true` if it is a power of three. Otherwise, return `false`*.
+
+An integer `n` is a power of three, if there exists an integer `x` such that `n == 3x`.
+
+ 
+
+ **Example 1:** 
+
+```
+Input: n = 27
+Output: true
+Explanation: 27 = 33
+
+```
+
+ **Example 2:** 
+
+```
+Input: n = 0
+Output: false
+Explanation: There is no x where 3x = 0.
+
+```
+
+ **Example 3:** 
+
+```
+Input: n = -1
+Output: false
+Explanation: There is no x where 3x = (-1).
+
+```
+
+ 
+
+ **Constraints:** 
+
+- -231 <= n <= 231 - 1
+
+ 
+
+ **Follow up:**  Could you solve it without loops/recursion?
+
+## Solution
+
+**Language:** Python  
+**Runtime:** 19 ms (beats 17.86%)  
+**Memory:** 19.4 MB (beats 6.94%)  
+**Submitted:** 2026-10-21T17:19:45.666Z  
+
+```py
+import math
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        if n<=0:
+            return False
+        app_pow=round(math.log(n,3))
+        return 3**app_pow==n
+        
+```
+
+---
+
+[View on LeetCode](https://leetcode.com/problems/power-of-three/)
