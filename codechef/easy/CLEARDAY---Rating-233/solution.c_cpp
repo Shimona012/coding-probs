@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+    int X,Y,clear;
+    scanf("%d",&X);
+    scanf("%d",&Y);
+    clear=7-X-Y;
+    printf("%d",clear);
+    return 0;
+}
+
