@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+	char S[11];
+	gets(S);
+	S[10]='\0';
+	printf("%c", S[6]);
+    return 0;
+}
+
