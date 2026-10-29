@@ -2,14 +2,16 @@
 
 int main() {
 	// your code goes here
-    int X,Y,T,i;
-    scanf("%d",&T);
-    for (i=0;i<T;i++){
-        scanf("%d",&X);
-        scanf("%d",&Y);
-        printf("%d",Y-X);
-        printf("\n");
-    }
-    return 0;
+	int N,M,T,i;
+	scanf("%d",&T);
+	for (i=0;i<T;i++){
+	    scanf("%d",&N);
+	    scanf("%d",&M);
+	    if (N<=M) printf("%d",0);
+	    else printf("%d",N-M);
+	    printf("\n");
+	}
+	return 0;
+
 }
 
