@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+    int T,N,X,i;
+    scanf("%d",&T);
+    for (i=0;i<T;i++){
+        scanf("%d",&N);
+        scanf("%d",&X);
+        printf("%d",N-X);
+        printf("\n");
+    }
+    return 0;
+}
+
