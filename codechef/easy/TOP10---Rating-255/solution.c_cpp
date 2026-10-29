@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+    int T,X,i;
+    scanf("%d",&T);
+    for (i=0;i<T;i++){
+        scanf("%d",&X);
+        if (X>10) printf("NO");
+        else printf("YES");
+        printf("\n");
+    }
+    return 0;
+}
+
