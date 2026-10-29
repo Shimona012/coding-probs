@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int N,M,T,i;
+	scanf("%d",&T);
+	for (i=0;i<T;i++){
+	    scanf("%d",&N);
+	    scanf("%d",&M);
+	    if (N<=M) printf("%d",0);
+	    else printf("%d",N-M);
+	    printf("\n");
+	}
+	return 0;
+
+}
+
