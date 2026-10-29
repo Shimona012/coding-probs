@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes 
+	int T,X,i;
+	scanf("%d",&T);
+	for (i=0;i<T;i++){
+	    scanf("%d",&X);
+	    if (X<30) printf("NO");
+	    else printf("YES");
+	    printf("\n");
+	}
+	return 0;
+
+}
+
