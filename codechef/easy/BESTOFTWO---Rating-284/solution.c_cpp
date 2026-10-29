@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int X,Y,T,i;
+	scanf("%d",&T);
+	for (i=0;i<T;i++){
+	    scanf("%d",&X);
+	    scanf("%d",&Y);
+	    if (X>Y) printf("%d",X);
+	    else printf("%d",Y);
+	    printf("\n");
+	}
+	return 0;
+
+}
+
