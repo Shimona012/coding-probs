@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int A,B;
+	scanf("%d",&A);
+	scanf("%d",&B);
+	printf("%d",(A+B)*10+1);
+	return 0;
+
+}
+
