@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+    int N,M,X,Y;
+    scanf("%d",&N);
+    scanf("%d",&M);
+    printf("\n");
+    scanf("%d",&X);
+    scanf("%d",&Y);
+    printf("%d",N*X+M*Y);
+    return 0;
+}
+
