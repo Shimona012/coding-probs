@@ -3,9 +3,7 @@ T=int(input())
 for i in range(T):
     N=int(input())
     ints=list(map(int,input().split()))
-    nums=dict()
-    for j in ints:
-        nums[j] = nums.get(j, 0) + 1
-    maxi=max(nums.values())
+    act_ints=set(ints)
+    maxi=max(ints.count(x) for x in act_ints)
     ops=N-maxi
     print(ops)
