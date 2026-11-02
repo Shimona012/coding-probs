@@ -64,7 +64,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T17:13:12.397Z  
+**Submitted:** 2026-11-02T17:17:55.775Z  
 
 ```py
 # cook your dish here
@@ -72,13 +72,10 @@ T=int(input())
 for i in range(T):
     N=int(input())
     ints=list(map(int,input().split()))
-    act_ints=set(ints)
     nums=dict()
-    maxi=0
-    for j in act_ints:
-        nums[j]=ints.count(j)
-        if ints.count(j)>maxi:
-            maxi=ints.count(j)
+    for j in ints:
+        nums[j] = nums.get(j, 0) + 1
+    maxi=max(nums.values())
     ops=N-maxi
     print(ops)
 ```
